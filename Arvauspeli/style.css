@@ -1,0 +1,46 @@
+body{
+    font-size: 1.2em;
+    margin: 20 0 auto 0;
+    background: url(Numbers.webp) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#container{
+    background-color: teal;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.94;
+}
+
+.panel{
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: lightcyan;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+button{
+    background-color: lightseagreen;
+    width: 80%;
+    height: 3em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.8em;
+}
+
+input{
+    border-radius: 10px;
+    width: 80%;
+    height: 4em;
+    text-align: center;
+}
+
+.activeButton{
+    background: green;
+}
+

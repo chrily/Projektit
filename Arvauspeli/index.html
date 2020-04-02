@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quess the number game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "init()">
+
+    <div id="container">
+
+        <div class="panel">
+            <h2>I have a randon number between 1-100</h2>
+            <h3>Dare to quess?</h3><hr>
+            <p>Select difficulty setting:</p>
+
+            <button id="easyBtn" onclick="easyMode()" class="">Easy: Guess in 10 attempts (default)</button>
+            <button id="hardBtn" onclick="hardMode()" class="">Hard: Guess in 5 attempts</button>
+
+            <button id = "newGameButton" onclick = "newGame()">NEW GAME</button>
+        </div>
+
+        <div class="panel">
+            <h3 id="textOutput">Enter your quess below &amp; press enter</h3>
+            <input type="number" id="inputBox" onchange="compareGuess()" autocomplete="off">
+            <p>Number of the previous attempts: <span id="attemps">0</span></p>
+        </div>
+
+        <div class="panel">
+            <p>Your previous quesses:</p>
+            <p id="guessLog"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
